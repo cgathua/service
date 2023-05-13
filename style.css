@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@300&display=swap');
+
+:root {
+    --primary-color: #060707;
+    --secondary-color: #ACACB2;
+    --tertiary-color: #66A0C0;
+    --desktop-container: 80%;
+    --mobile-container: 90%;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.75;
+}
+
+.container {
+    margin: 0 auto;
+    width: var(--desktop-container);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
