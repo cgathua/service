@@ -39,3 +39,72 @@ img {
     display: block;
 }
 
+a {
+    color: var(--secondary-color);
+    transition: var(--transition);
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+    color: var(--tertiary-color);
+}
+
+h1, h2, h3, h4 {
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3, h4, p {
+    font-family: 'Manrope', sans-serif;
+}
+
+#navbar2, #menu-btn {
+    display: none;
+}
+
+html, body {
+    width: auto!important; overflow-x: hidden!important
+} 
+/* END OF GENERAL STYLING */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+/* END OF HEADER STYLING */
+
+
