@@ -48,7 +48,7 @@ a {
 }
 
 a:hover {
-    color: var(--tertiary-color);
+    color: var(--alternate-color);
 }
 
 h1, h2, h3, h4, p {
@@ -139,4 +139,26 @@ article[class="banner"] button {
 section[id="services"] li {
     color: var(--secondary-color);
     list-style: initial;
+    text-transform: capitalize;
+}
+
+section[id="services"] .container {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr)
+    minmax(min-content, 1fr) minmax(min-content, 1fr);
+    place-items: center;
+    gap: 1rem;
+}
+
+article[class="services_column"] h3 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+article[class="services_column"] {
+    padding: 1rem;
+}
+.services_column svg {
+    display: block;
+    margin: auto;
 }
