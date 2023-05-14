@@ -162,3 +162,36 @@ article[class="services_column"] {
     display: block;
     margin: auto;
 }
+/* END OF SERVICES STYLING */
+
+section[id="faqs"] .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.faq {
+    border-bottom: 2px solid var(--secondary-color);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.faq.active .answer {
+    max-height: fit-content;
+}
+
+.faq.active .question svg {
+    transform: rotate(180deg);
+}
+/* END OF FAQS STYLING */
