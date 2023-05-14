@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@300&display=swap');
 
 :root {
-    --primary-color: #060707;
+    --primary-color: #000;
     --secondary-color: #ACACB2;
-    --tertiary-color: #66A0C0;
+    --tertiary-color: #7B8482;
+    --alternate-color: #fff;
     --desktop-container: 80%;
     --mobile-container: 90%;
     --transition: all 0.3s ease;
@@ -25,6 +26,7 @@ html {
 body {
     min-height: 100vh;
     line-height: 1.75;
+    background-color: var(--primary-color);
 }
 
 .container {
@@ -49,12 +51,11 @@ a:hover {
     color: var(--tertiary-color);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
     color: var(--secondary-color);
 }
 
 h1 {
-    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -79,6 +80,22 @@ h3, h4, p {
 html, body {
     width: auto!important; overflow-x: hidden!important
 } 
+
+.btn {
+    padding: 5px 20px;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);    
+    cursor: pointer;
+    transition: var(--transition); 
+    text-transform: uppercase;  
+}
+
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);  
+}
 /* END OF GENERAL STYLING */
 
 header {
@@ -107,4 +124,19 @@ header {
 }
 /* END OF HEADER STYLING */
 
+section[id="home"] .container {
+    display: grid;
+    grid-template-columns: minmax(min-content, 30%)
+    minmax(min-content, 70%);
+    place-items: end;
+}
 
+article[class="banner"] button {
+    margin: 1rem auto;
+}
+/* END OF HOME STYLING */
+
+section[id="services"] li {
+    color: var(--secondary-color);
+    list-style: initial;
+}
