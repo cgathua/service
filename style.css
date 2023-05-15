@@ -69,7 +69,7 @@ section h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-h3, h4, p {
+h3, h4, p, small {
     font-family: 'Manrope', sans-serif;
 }
 
@@ -195,3 +195,23 @@ section[id="faqs"] .container {
     transform: rotate(180deg);
 }
 /* END OF FAQS STYLING */
+
+section[id="reviews"] small {
+    color: var(--secondary-color);
+}
+
+section[id="reviews"] .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+figure[class="review"] {
+    border: 2px solid  var(--secondary-color);
+    padding: 1rem;
+}
+
+figcaption p {
+    text-align: left !important;
+}
