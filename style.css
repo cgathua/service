@@ -90,12 +90,6 @@ html, body {
     transition: var(--transition); 
     text-transform: uppercase;  
 }
-
-
-.btn:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);  
-}
 /* END OF GENERAL STYLING */
 
 header {
@@ -215,3 +209,73 @@ figure[class="review"] {
 figcaption p {
     text-align: left !important;
 }
+/* END OF REVIEWS STYLING */
+
+section[id="contact"] .container {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr)
+    minmax(min-content, 1fr);
+    gap: 4rem;
+    place-items: center;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    color: var(--secondary-color);
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 250px;
+    width: 60vw;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+input, textarea, select, legend {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input, textarea {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--primary-color);
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: var(--secondary-color);
+    border-color: var(--tertiary-color);
+    color: var(--primary-color);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    min-width: 250px;
+    cursor: pointer;
+}
+ input[type="submit"]:hover {
+    color: var(--alternate-color);
+ }
+ul[class="contact_details"] li, h4 {
+    padding: 0.5rem 0;
+}
+
+/* END OF CONTACT STYLING */
