@@ -57,6 +57,7 @@ h1, h2, h3, h4, p {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
 }
 
 section {
@@ -190,7 +191,7 @@ section[id="faqs"] .container {
 }
 /* END OF FAQS STYLING */
 
-section[id="reviews"] small {
+small {
     color: var(--secondary-color);
 }
 
@@ -277,5 +278,60 @@ input[type="submit"] {
 ul[class="contact_details"] li, h4 {
     padding: 0.5rem 0;
 }
-
 /* END OF CONTACT STYLING */
+
+footer a {
+    color: var(--secondary-color);
+}
+
+footer a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+section[id="footer-socials"]{
+    padding: 0 1.875rem 1.25rem;
+}
+
+ul[class="footer-icons"] {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--secondary-color);
+}
+
+ul[class="footer-icons"] li {
+    margin: 0.5rem;
+}
+
+.footer-icons svg:hover {
+    fill: var(--alternate-color);
+}
+/* LEGAL SECTION */
+
+section[id="footer-legal"] a {
+    color: var(--color-secondary);
+}
+
+section[id="footer-legal"] {
+    padding: 0.9375rem 1.875rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    
+}
+
+ul[class="footer-legal-items"] {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul[class="footer-legal-items"] li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;   
+}
+
+.footer-legal-items li:nth-of-type(2) {
+    flex: 1;
+}
+/* END OF FOOTER STYLING */
