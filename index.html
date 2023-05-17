@@ -223,14 +223,14 @@
                             <label id="name"> First Name <input type="text" name="First Name" placeholder="First Name" aria-label="official name" required></label>
                             <label id="legal name"> Last Name <input type="text" name="Last Name" placeholder="Last Name" aria-label="legal name" required></label>
                             <label id="email"> Email <input type="email" name="Email Address" placeholder="Enter Your Email" aria-labelledby="email" required></label>
-                            <label id="date">Appointment Date <input type="date" name="Schedule Date"></label>
-                            <label id="time">Appointment Time <input type="time" name="Schedule Time"></label>
+                            <label id="date">Appointment Date <input type="date" name="Schedule Date" aria-labelledby="date" required></label>
+                            <label id="time">Appointment Time <input type="time" name="Schedule Time" aria-labelledby="time" required></label>
                         </legend>
                     </fieldset>
                     <fieldset>
                         <legend>
-                            <label id="message"> Message
-                            <textarea rows="7" placeholder="Message....." aria-labelledby="message"></textarea>
+                            <label> Message
+                            <textarea id="message" rows="7" placeholder="Message....." aria-labelledby="message"></textarea>
                             </label>
                         </legend>
                     </fieldset>
