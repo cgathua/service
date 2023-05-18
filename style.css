@@ -152,12 +152,10 @@ article[class="services_column"] h3 {
 article[class="services_column"] {
     padding: 1rem;
 }
+
 .services_column svg {
     display: block;
     margin: auto;
-}
-.services_column ul {
-    padding-left: 1rem;
 }
 /* END OF SERVICES STYLING */
 
@@ -276,7 +274,8 @@ input[type="submit"] {
 }
  input[type="submit"]:hover {
     color: var(--alternate-color);
- }
+}
+
 ul[class="contact_details"] li, h4 {
     padding: 0.5rem 0;
 }
