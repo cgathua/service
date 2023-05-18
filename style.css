@@ -157,6 +157,10 @@ article[class="services_column"] {
     display: block;
     margin: auto;
 }
+
+.services_column ul {
+    padding-left: 1rem;
+}
 /* END OF SERVICES STYLING */
 
 section[id="faqs"] .container {
