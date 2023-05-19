@@ -57,6 +57,7 @@ h1, h2, h3, h4, p {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
 }
 
 section {
@@ -213,6 +214,11 @@ figure[class="review"] {
 
 figcaption p {
     text-align: left !important;
+}
+
+.avatar img, source {
+    width: 4rem;
+    border-radius: 50%;
 }
 /* END OF REVIEWS STYLING */
 
@@ -391,6 +397,10 @@ ul[class="footer-legal-items"] li {
     #menu-btn, nav svg, #navbar2 svg {
         display: initial;
     }
+
+    h1 {
+        font-size: 1.5rem;
+    }
     /*END OF HAMBURGER MENU */
     section[id="home"] .container {
         grid-template-columns: 1fr;
@@ -425,6 +435,10 @@ ul[class="footer-legal-items"] li {
 
     section[id="reviews"] .container {
         grid-template-columns: minmax(min-content, 1fr);
+    }
+
+    h1 {
+        font-size: initial;
     }
 }
 /* END OF MEDIA QUERIES FOR PHONES */  
