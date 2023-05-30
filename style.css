@@ -5,7 +5,7 @@
     --secondary-color: #ACACB2;
     --tertiary-color: #7B8482;
     --alternate-color: #fff;
-    --desktop-container: 80%;
+    --desktop-container: 86%;
     --mobile-container: 90%;
     --transition: all 0.3s ease;
 }
@@ -61,7 +61,7 @@ h1 {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 5.5rem 0;
 }
 
 section h2 {
@@ -208,7 +208,7 @@ section[id="reviews"] .container {
 }
 
 figure[class="review"] {
-    border: 2px solid  var(--secondary-color);
+    background-color: var(--alternate-color);
     padding: 1rem;
 }
 
@@ -220,13 +220,17 @@ figcaption p {
     width: 4rem;
     border-radius: 50%;
 }
+
+.review_h, .review_small, .review_p {
+    color: var(--primary-color);
+}
 /* END OF REVIEWS STYLING */
 
 section[id="contact"] .container {
     display: grid;
     grid-template-columns: minmax(min-content, 1fr)
     minmax(min-content, 1fr);
-    gap: 2rem;
+    gap: 1rem;
     place-items: center;
 }
 
