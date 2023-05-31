@@ -167,12 +167,12 @@ article[class="services_column"] {
 section[id="faqs"] .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .faq {
     border-bottom: 2px solid var(--secondary-color);
-    padding: 1rem;
+    padding: 0.5rem;
     cursor: pointer;
 }
 
