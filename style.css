@@ -204,21 +204,24 @@ section[id="reviews"] .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    text-align: center;
+    place-items: center;
 }
 
 figure[class="review"] {
-    background-color: var(--alternate-color);
+    background-color: var(--tertiary-color);
     padding: 1rem;
 }
 
-figcaption p {
-    text-align: left !important;
+.avatar img {
+    border-radius: 50%;
+    width: 4rem;
 }
 
-.avatar img, source {
-    width: 4rem;
-    border-radius: 50%;
+.avatar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 .review_h, .review_small, .review_p {
