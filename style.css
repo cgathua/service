@@ -408,6 +408,10 @@ ul[class="footer-legal-items"] li {
     h1 {
         font-size: 1.5rem;
     }
+
+    header {
+        border-bottom: 1px solid var(--secondary-color);
+    }
     /*END OF HAMBURGER MENU */
     section[id="home"] .container {
         grid-template-columns: 1fr;
